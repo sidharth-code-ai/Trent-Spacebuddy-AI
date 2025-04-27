@@ -19,9 +19,11 @@ Currently, this project is running locally, and I have not yet published it to t
 
 2.Install all the dependencies:
     pip install -r requirements.txt
+
 3. Set yout Telegram Bot Token(Talk to Bot Father) and Open AI api Key:
     OPENAI_API_KEY="your_api_key"
     TELEGRAM_BOT_TOKEN="your_bot_token"
+
 4. Run the Code 
 
 Happy Coding, 
