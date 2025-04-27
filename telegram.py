@@ -1,12 +1,3 @@
-# TOOLS AND THE BOT 
-
-# Create the Document Pipeline 
-# Add to the schema 
-# Edit the Prompt 
-
-
-
-
 # Imports 
 from openai import OpenAI
 import csv
@@ -25,6 +16,7 @@ import os
 load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 kb = os.getenv("KB")
+telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
 
 
 
@@ -295,7 +287,7 @@ def chat(user_input):
 ############################################################## TELEGRAM #######################################################################
 import telebot 
 
-bot = telebot.TeleBot(token="7323295143:AAEpb4LW46WUk8eZhmxn_MLK2P3iOowyzxg")
+bot = telebot.TeleBot(token=telegram_bot_token)
 
 
 # The Main Command 
